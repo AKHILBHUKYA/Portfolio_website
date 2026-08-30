@@ -1,28 +1,28 @@
-# Akhil Bhukya — Developer Portfolio (FINAL)
+# Akhil Bhukya - Portfolio
 
-Complete working single-page portfolio.
+Personal portfolio website showcasing my projects, technical skills, experience, achievements, certifications, and resume.
 
-## Contents
-- index.html (full site: HTML + CSS + JS)
-- assets/akhil-profile-cinematic.jpg (professional profile photo)
-- assets/projects/ (all project visuals including C Compiler reference quality)
-- resume/Akhil_Bhukya_Resume.pdf (latest resume)
+## Live Portfolio
 
-## Key Features Preserved
-- Dark futuristic design, 3D elements, animations
-- Project cards + detailed modals with galleries (NEXUS has 5 views)
-- GitHub: https://github.com/AKHILBHUKYA
-- LinkedIn: https://www.linkedin.com/in/akhil-bhukya-a42422353/
-- Download Resume button (hero + mobile)
-- Responsive layout
-- Lazy-loaded project images
+https://portfolio-website-eight-omega-33.vercel.app/
 
-## Project Images
-C Compiler image is the quality reference (detailed technical pipeline visualization).
-Other project images follow the same dark navy / blue-purple technical style.
+## Technologies
 
-## Run
-Open index.html in a browser or:
-```bash
-python3 -m http.server 8080
-```
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Java
+- Spring Boot
+- Oracle SQL
+- Git & GitHub
+
+## Resume
+
+The latest resume is available in the `resume` folder.
+
+## Author
+
+Akhil Bhukya
+
+GitHub: https://github.com/AKHILBHUKYA
