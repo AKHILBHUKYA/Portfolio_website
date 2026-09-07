@@ -4,7 +4,7 @@ Personal portfolio website showcasing my projects, technical skills, experience,
 
 ## Live Portfolio
 
-https://portfolio-website-eight-omega-33.vercel.app/
+https://portfolio-website-cyan-tau-46.vercel.app/
 
 ## Technologies
 
