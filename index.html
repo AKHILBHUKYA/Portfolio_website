@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akhil Bhukya | Full Stack Developer</title>
-<meta name="description" content="Portfolio of Akhil Bhukya, a Full Stack Developer specializing in Java, Spring Boot, React and modern web application development.">
+<title>Akhil Bhukya | Software Engineer</title>
+<meta name="description" content="Portfolio of Akhil Bhukya, a Software Engineer specializing in Java, Spring Boot, React and modern web application development.">
 <meta name="author" content="Akhil Bhukya">
 <link rel="canonical" href="https://akhilbhukya.dev/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Akhil Bhukya | Full Stack Developer">
-<meta property="og:description" content="Full Stack Developer — Java & React Specialist. Building modern, scalable, performance-driven web applications.">
+<meta property="og:description" content="Software Engineer — Java & React Specialist. Building modern, scalable, performance-driven web applications.">
 <meta property="og:url" content="https://akhilbhukya.dev/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Akhil Bhukya | Full Stack Developer">
-<meta name="twitter:description" content="Full Stack Developer — Java & React Specialist.">
+<meta name="twitter:description" content="Software Engineer — Java & React Specialist.">
 <meta name="theme-color" content="#05060d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -177,6 +177,20 @@ body.custom-cursor,body.custom-cursor a,body.custom-cursor button{cursor:none}
 .search-wrap input{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:99px;padding:10px 18px;color:var(--txt);font-family:var(--font);font-size:14px;outline:none}
 .search-wrap input:focus{border-color:rgba(139,123,255,.5)}
 .search-wrap input::placeholder{color:var(--dim)}
+
+.deployed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.deployed-card{display:flex;flex-direction:column;min-height:250px;border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:24px;transition:transform .35s var(--ease),border-color .3s,box-shadow .35s}
+.deployed-card:hover{transform:translateY(-6px);border-color:rgba(139,123,255,.5);box-shadow:0 18px 50px -18px rgba(91,140,255,.28)}
+.deployed-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+.deployed-status{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(91,140,255,.28);padding:5px 9px;border-radius:99px}
+.deployed-icon{width:46px;height:46px;border-radius:12px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:14px;color:var(--vio)}
+.deployed-card h3{font-size:21px;font-weight:600;margin-bottom:9px}
+.deployed-card p{color:var(--mut);font-size:13.5px;line-height:1.55;flex:1}
+.deployed-link{margin-top:20px;display:inline-flex;align-items:center;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:11px;color:var(--txt);border-top:1px solid var(--line);padding-top:14px}
+.deployed-link span{color:var(--blue);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:900px){.deployed-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.deployed-grid{grid-template-columns:1fr}}
+
 .all-proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .all-proj{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--panel);transition:border-color .3s,transform .3s;text-align:left;display:block;width:100%}
 .all-proj:hover{border-color:rgba(139,123,255,.45);transform:translateY(-3px)}
@@ -279,6 +293,7 @@ footer{border-top:1px solid var(--line);padding:34px 0}
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#deployed-projects">Live</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#github">GitHub</a></li>
@@ -297,6 +312,7 @@ footer{border-top:1px solid var(--line);padding:34px 0}
   <a href="#about">About <span>02</span></a>
   <a href="#skills">Skills <span>03</span></a>
   <a href="#projects">Projects <span>04</span></a>
+  <a href="#deployed-projects">Live Projects <span>05</span></a>
   <a href="#experience">Experience <span>05</span></a>
   <a href="#certifications">Certifications <span>06</span></a>
   <a href="#github">GitHub <span>07</span></a>
@@ -310,7 +326,7 @@ footer{border-top:1px solid var(--line);padding:34px 0}
     <div>
       <p class="hero-hi">Hi, I'm</p>
       <h1 class="hero-name">Akhil <span class="accent">Bhukya</span></h1>
-      <p class="hero-role">Full Stack Developer · Java & React Specialist</p>
+      <p class="hero-role">Software Engineer · Java & React Specialist</p>
       <p class="hero-desc">I build modern, scalable and performance-driven web applications with clean interfaces and robust backend systems.</p>
       <div class="hero-actions">
         <a class="btn btn-solid" href="#projects">View My Work</a><a class="btn btn-ghost" id="hero-view-resume" href="resume/Akhil_Bhukya_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
@@ -394,6 +410,53 @@ footer{border-top:1px solid var(--line);padding:34px 0}
       <p class="sec-sub">A selection of things I've designed, built and shipped — click any project for the full story.</p>
     </div>
     <div class="proj-grid" id="proj-grid"></div>
+  </div>
+</section>
+
+<section id="deployed-projects" class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">Live</p>
+      <h2 class="sec-title">Deployed Projects</h2>
+      <p class="sec-sub">Projects currently available online — open the live deployment to explore them.</p>
+    </div>
+    <div class="deployed-grid">
+      <article class="deployed-card reveal tilt">
+        <div class="deployed-top">
+          <div class="deployed-icon">NX</div>
+          <span class="deployed-status">Live</span>
+        </div>
+        <h3>NEXUS Social Workspace</h3>
+        <p>Unified social workspace combining WhatsApp, Instagram, Facebook and X-style workflows in one platform.</p>
+        <a class="deployed-link" href="https://nexusworkspace-kohl.vercel.app/" target="_blank" rel="noopener">
+          Live Deployment <span>nexusworkspace-kohl.vercel.app ↗</span>
+        </a>
+      </article>
+
+      <article class="deployed-card reveal tilt">
+        <div class="deployed-top">
+          <div class="deployed-icon">AI</div>
+          <span class="deployed-status">Live</span>
+        </div>
+        <h3>AI Search Engine</h3>
+        <p>AI-powered search application for collecting, processing and presenting web information through a modern interface.</p>
+        <a class="deployed-link" href="https://akhil-aifront.vercel.app/" target="_blank" rel="noopener">
+          Live Deployment <span>akhil-aifront.vercel.app ↗</span>
+        </a>
+      </article>
+
+      <article class="deployed-card reveal tilt">
+        <div class="deployed-top">
+          <div class="deployed-icon">RM</div>
+          <span class="deployed-status">Live</span>
+        </div>
+        <h3>AI Resume Matcher</h3>
+        <p>Resume matching application designed to compare candidate resumes with job requirements and surface relevant matches.</p>
+        <a class="deployed-link" href="https://resume-matcher-weld.vercel.app/" target="_blank" rel="noopener">
+          Live Deployment <span>resume-matcher-weld.vercel.app ↗</span>
+        </a>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -523,7 +586,7 @@ footer{border-top:1px solid var(--line);padding:34px 0}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
 <script>
 const CONFIG = {
-  email: "",
+  email: "akhilbhukya16@gmail.com",
   resume: "resume/Akhil_Bhukya_Resume.pdf",
   github: "https://github.com/AKHILBHUKYA",
   githubUser: "AKHILBHUKYA",
@@ -532,17 +595,20 @@ const CONFIG = {
 };
 
 const SKILLS = [
-  { name: "React JS", tag: "Core", desc: "Component-driven UIs, hooks, state management and performance tuning." },
-  { name: "Java", tag: "Core", desc: "OOP, collections, multithreading and clean, maintainable backend code." },
-  { name: "Spring Boot", tag: "Backend", desc: "RESTful services, layered architecture and production-grade APIs." },
-  { name: "JavaScript", tag: "Core", desc: "Modern ES6+ patterns, async workflows and DOM engineering." },
-  { name: "SQL", tag: "Data", desc: "Relational modeling, joins and query optimization in MySQL." },
-  { name: "React Native", tag: "Mobile", desc: "Cross-platform mobile apps sharing logic with the React ecosystem." },
-  { name: "Python", tag: "Language", desc: "Scripting, automation and data-handling utilities." },
-  { name: "AWS", tag: "Cloud", desc: "Core cloud services for deployment, storage and scaling." },
-  { name: "Git", tag: "Workflow", desc: "Branching strategies, collaboration and clean commit history." },
-  { name: "Docker", tag: "DevOps", desc: "Containerized builds for reproducible local and cloud environments." },
-  { name: "Maven", tag: "Tooling", desc: "Dependency management and lifecycle builds for Java projects." }
+  { name: "Java", tag: "Core", desc: "Core Java, OOP, collections and backend application development." },
+  { name: "Spring Boot", tag: "Backend", desc: "Spring, Spring MVC, REST APIs and microservices development." },
+  { name: "REST APIs", tag: "Backend", desc: "API development, request-response flows and API testing." },
+  { name: "React", tag: "Frontend", desc: "Component-based interfaces with React and modern JavaScript." },
+  { name: "Oracle SQL", tag: "Database", desc: "SQL queries, relational data handling and database operations." },
+  { name: "MySQL", tag: "Database", desc: "Relational database design, queries and application persistence." },
+  { name: "JavaScript", tag: "Frontend", desc: "Interactive web interfaces and client-side application logic." },
+  { name: "Python", tag: "Language", desc: "General-purpose programming, scripting and application development." },
+  { name: "C", tag: "Language", desc: "Programming fundamentals and problem-solving with C." },
+  { name: "AWS", tag: "Cloud", desc: "Cloud deployment and application hosting fundamentals." },
+  { name: "Git", tag: "Workflow", desc: "Version control, branching and collaborative development workflows." },
+  { name: "JUnit", tag: "Testing", desc: "Unit testing for Java applications and Spring Boot services." },
+  { name: "Maven", tag: "Tooling", desc: "Java dependency management and build lifecycle automation." },
+  { name: "API Testing", tag: "Testing", desc: "Testing REST endpoints and validating API request-response behavior." }
 ];
 
 const PROJECTS = [
@@ -687,7 +753,35 @@ const PROJECTS = [
     solution: "A from-scratch educational C compiler exploring core compilation stages.",
     features: ["Lexer / parser concepts", "Code generation basics"]
   }
-];
+,
+  {
+    name: "BankSphere — Microservices Banking Platform",
+    short: "Java Spring Boot microservices banking platform for users, accounts, cards and loans.",
+    tech: ["Java", "Spring Boot", "Microservices", "MySQL"],
+    lang: "Backend",
+    tags: ["java","backend","fullstack"],
+    github: "https://github.com/AKHILBHUKYA/-BankSphere-Microservices",
+    demo: null,
+    image: null,
+    stars: 0,
+    problem: "Banking workflows need modular services for accounts, users, transactions and fund transfers.",
+    solution: "A Spring Boot microservices platform separating core banking capabilities into independent services with service discovery and API communication.",
+    features: ["Microservices architecture", "REST APIs", "Spring Security", "MySQL persistence", "Service-to-service communication"]
+  },
+  {
+    name: "GHMC Complaint Register",
+    short: "Civic complaint management application for reporting, tracking and resolving local civic issues.",
+    tech: ["Java", "Spring Boot", "React", "MySQL"],
+    lang: "Full Stack",
+    tags: ["java","react","backend","fullstack"],
+    github: "https://github.com/AKHILBHUKYA/GHMC-Complaint-Register",
+    demo: null,
+    image: null,
+    stars: 0,
+    problem: "Citizens need a clear workflow to report civic issues and track their resolution.",
+    solution: "A role-based complaint workflow connecting citizen reports with review, assignment, field resolution and status tracking.",
+    features: ["Complaint lifecycle", "Role-based access", "REST APIs", "MySQL persistence", "Real-time updates"]
+  }];
 
 const FEATURED = PROJECTS.slice(0, 4);
 
