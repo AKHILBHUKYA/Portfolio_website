@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Akhil Bhukya — Cinematic 3D Portfolio
 
 A responsive, cinematic portfolio styled to closely follow the supplied reference: graphite-black atmosphere, muted lime accents, a dramatic orbital 3D hero visual, five featured project cards, and separate project archive, achievements and certifications sections.
@@ -19,3 +20,33 @@ A responsive, cinematic portfolio styled to closely follow the supplied referenc
 
 ## Notes
 The Enterprise Inventory Engine is included as requested; no repository URL was provided in the source portfolio, so its card links to the project archive rather than a fabricated destination. Certificate verification links/scans were not provided, so credentials are presented as text only.
+=======
+# Akhil Bhukya - Portfolio
+
+Personal portfolio website showcasing my projects, technical skills, experience, achievements, certifications, and resume.
+
+## Live Portfolio
+
+https://portfolio-website-cyan-tau-46.vercel.app/
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Java
+- Spring Boot
+- Oracle SQL
+- Git & GitHub
+
+## Resume
+
+The latest resume is available in the `resume` folder.
+
+## Author
+
+Akhil Bhukya
+
+GitHub: https://github.com/AKHILBHUKYA
+>>>>>>> 6b9bc0c02c5fe1456521627b04819a88c17fc025
