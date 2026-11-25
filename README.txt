@@ -1,14 +1,5 @@
-Akhil Bhukya - Cinematic 3D Portfolio
+Akhil Bhukya — Cinematic Portfolio
 
-Preview: open index.html in a modern browser. This is a static website with no build step.
+Open index.html in a browser to preview the portfolio. The site is static and requires no build step. Project images, résumé PDF, filtering, project links, responsive navigation, scroll reveals, and CSS orbital effects are included.
 
-Included:
-- Responsive portfolio with project filters and working portfolio links
-- Warm olive, amber, charcoal color grading inspired by the provided image
-- Animated CSS 3D globe/orbits with pointer-responsive depth
-- Scroll reveal effects and reduced-motion support
-- Updated Software Intern and DIANO AI Open Source Contributor experience
-- Achievement and certification details based on the supplied reference
-- Latest uploaded résumé at resume/Akhil_ASE.pdf
-
-Google Fonts are loaded online when available; local system font fallbacks are provided.
+The visual style uses a dark navy base with cyan and violet accents. The 3D orbital artwork is CSS-based, so no WebGL library or external runtime dependency is required. Google Fonts are loaded online; system sans-serif fallbacks are included.
